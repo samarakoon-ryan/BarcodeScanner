@@ -14,6 +14,7 @@
 		941FA86D2AE7268E005D8A81 /* BarcodeScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FA86C2AE7268E005D8A81 /* BarcodeScannerTests.swift */; };
 		941FA8772AE7268F005D8A81 /* BarcodeScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FA8762AE7268F005D8A81 /* BarcodeScannerUITests.swift */; };
 		941FA8792AE7268F005D8A81 /* BarcodeScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FA8782AE7268F005D8A81 /* BarcodeScannerUITestsLaunchTests.swift */; };
+		941FA8862AE7313A005D8A81 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FA8852AE7313A005D8A81 /* ScannerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		941FA8722AE7268F005D8A81 /* BarcodeScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcodeScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		941FA8762AE7268F005D8A81 /* BarcodeScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerUITests.swift; sourceTree = "<group>"; };
 		941FA8782AE7268F005D8A81 /* BarcodeScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		941FA8852AE7313A005D8A81 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				941FA85D2AE7268C005D8A81 /* BarcodeScannerView.swift */,
 				941FA85F2AE7268E005D8A81 /* Assets.xcassets */,
 				941FA8612AE7268E005D8A81 /* Preview Content */,
+				941FA8852AE7313A005D8A81 /* ScannerVC.swift */,
 			);
 			path = BarcodeScanner;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				941FA8862AE7313A005D8A81 /* ScannerVC.swift in Sources */,
 				941FA85E2AE7268C005D8A81 /* BarcodeScannerView.swift in Sources */,
 				941FA85C2AE7268C005D8A81 /* BarcodeScannerApp.swift in Sources */,
 			);

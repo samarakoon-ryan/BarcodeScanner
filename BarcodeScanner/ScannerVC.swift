@@ -64,10 +64,30 @@ final class ScannerVC: UIViewController {
         previewLayer!.videoGravity = .resizeAspectFill
         view.layer.addSublayer(previewLayer!)
         
-        captureSession.startRunning()   
+        // Start Capture Session
+        captureSession.startRunning()
     }
 }
 
 extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
     
+    func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        // get metadata object
+        guard let object = metadataObjects.first else {
+            return
+        }
+        
+        // get machine readable object
+        guard let machineReadableObject = object as? AVMetadataMachineReadableCodeObject else {
+            return
+        }
+        
+        // get string value from machine readable object
+        guard let barcode = machineReadableObject.stringValue else {
+            return
+        }
+        
+        // send string value to delegate
+        scannerDelegate?.didFind(barcode: barcode)
+    }
 }

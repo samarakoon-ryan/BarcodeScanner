@@ -121,7 +121,7 @@ extension ScannerVC: AVCaptureMetadataOutputObjectsDelegate {
         }
         
         // only capture barcode once
-        captureSession.stopRunning()
+//        captureSession.stopRunning()
         
         // send string value to delegate if found
         scannerDelegate?.didFind(barcode: barcode)
